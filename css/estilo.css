@@ -1,5 +1,170 @@
-.logo {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 5px;
+}
+
+.header nav {
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.header .navbar .contenedor {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.header .navbar .contenedor .divLogo .logo img {
     width: 100px;
-    height: 100px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+
+.header .navbar .contenedor .divUl .divLista .lista .navTitulo {
+    color: beige;
+}
+
+.header .navbar .contenedor .divUl .divLista .lista {
+    display: inline-flex;
+    flex-flow: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.divUl {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.header .navbar .contenedor .divUl .lista .navLi {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.lista li:hover {
+    transform: scale(1.1);
+}
+
+.header .navbar .contenedor .divUl .lista .listaInfo ul li .itemInfo {
+    color: black;
+    transition: all 0.3s;
+}
+
+.ulInfo li:hover {
+    transform: scale(1.1);
+}
+
+.busqueda {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: 5px;
+    justify-content: right;
+    align-items: center;
+}
+
+.carrito {
+    height: auto;
+    width: 40px;
+    padding: 0 10px;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 199, 199);
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+}
+
+
+.carouselP {
+    color: black;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+}
+
+.producto {
+    margin: 0 auto;
+    width: 70%;  
+    max-width: none; 
+    min-width: 100%;
+}
+
+@media all and (max-width: 450px) {
+    .producto {
+        width: 100%;
+    }
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+}
+
+.marcas h3 {
+    margin-top: 15px;
+}
+
+.marcas a img {
+    width: 150px;
+    height: 100%;
+    padding: 30px;
     cursor: pointer;
 }
+
+.logoFooter {
+    width: 75px;
+    height: auto;
+}
+
