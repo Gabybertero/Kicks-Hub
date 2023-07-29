@@ -17,6 +17,7 @@
 .header nav {
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 .header .navbar {
@@ -233,3 +234,88 @@ main {
     height: auto;
 }
 
+.bodyProductos {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 199, 199);
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorPadre {
+    display: grid;
+    grid-template-areas:
+    "nav card card card card info"
+    "nav card card card card info" 
+    "nav card card card card info"
+    "nav card card card card info"
+    "footer footer footer footer footer footer";
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: repeat(5, auto);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    row-gap: 5px;
+    column-gap: 10px;
+    padding-top: 10px;
+}
+
+.navProductos {
+    grid-area: nav;
+}
+
+.ulNavProductos {
+    list-style: none;
+}
+
+.navProductos .tituloProducto {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.navProductos .categorias {
+    text-indent: 10px;
+    padding-left: 15px;
+}
+
+.navProductos .ulNavProductos li {
+    text-indent: 20px;
+}
+
+.navProductos .ulNavProductos li a {
+    text-decoration: none;
+    color: black;
+}
+
+.productos {
+    grid-area: card;
+}
+
+.productos .row div {
+    padding: 0px 10px 15px 10px;
+}
+
+.productos .card div a {
+    background-color: crimson;
+}
+
+.card div p {
+    font-size: 15px;
+}
+
+.card div h3 {
+    display: flex;
+    font-size: 20px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerProducto {
+    grid-area: footer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
