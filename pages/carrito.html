@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CÓMO COMPRAR | KICK'S HUB</title>
+    <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../img/Jordan color remove .png" type="image/x-icon">
@@ -17,7 +17,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
-<body class="bodyComprar">
+<body class="bodyCarrito">
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="contenedor container-fluid">
@@ -73,31 +73,71 @@
         </nav>
     </header>
 
-    <div class="comoComprar">
-        <h2>CÓMO COMPRAR</h2>
+    <div class="contactoContentCarrito">
+        <div class="column">
+            <div class="contactoForm">
+                <form action="" class="formulario">
+                    <h3>DATOS DE CONTACTO:</h3>
 
-        <div class="comoComprarContent">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam illo pariatur similique sit soluta!
-                Praesentium facere vitae molestias corporis, sed, vero optio natus at officiis officia similique harum
-                fugit qui labore consequatur temporibus sapiente ipsa adipisci. Tenetur, esse fugit provident modi
-                reprehenderit dolore deserunt neque illum veniam labore magnam quos sapiente rem, ipsam unde eveniet
-                recusandae explicabo, molestiae dolor maxime repudiandae? Dolor, cupiditate debitis quam eaque rerum
-                nesciunt, ipsum cum aliquid animi maxime facere voluptatum tempore laudantium vero! Quod unde quae
-                recusandae, voluptatem incidunt quos sit at aut hic praesentium enim repellendus, cupiditate nisi ipsam
-                explicabo earum voluptatum dicta a inventore consequatur atque temporibus eaque! Ab pariatur iusto nobis
-                quam quibusdam architecto dolores quaerat dolor error! Officia magni excepturi fugiat doloremque
-                architecto a voluptate, pariatur nisi? Soluta facere cupiditate, inventore ipsum voluptates explicabo.
-                Numquam earum corrupti sapiente, explicabo totam odit fuga officia at minus veniam unde incidunt ullam?
-                Recusandae fugiat maxime iure, ipsa consectetur delectus cupiditate aliquam perspiciatis in ipsam. Eaque
-                totam magnam odit. Delectus in vero soluta impedit obcaecati ratione minima maxime commodi assumenda
-                veritatis, odit a mollitia doloremque quasi tempore facilis voluptatem maiores ipsa iste harum optio
-                omnis quod incidunt! Sint sed nisi maiores eligendi distinctio suscipit ratione.</p>
+                    <br>
 
-            <img src="../img/tutorial.jpg" alt="imagenTutorial" class="imagenTutorial">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" required class="inputContacto" id="nombre" >
 
-            <iframe class="videoTutorial" width="560" height="315" src="https://www.youtube.com/embed/YJcUXLaJD6o"
-                title="YouTube video player" frameborder="0" ; autoplay; clipboard-write; encrypted-media; gyroscope;
-                picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br><br>
+
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" required class="inputContacto" id="apellido">
+
+                    <br><br>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" required class="inputContacto" id="email">
+
+                    <br><br>
+
+                    <label for="celular">CELULAR</label>
+                    <input type="tel" pattern="[0-9]{10}" inputmode="numeric" id="celular"
+                        placeholder="Codigo de area + 1234567" class="inputContacto" required>
+
+                    <br><br>
+
+                    <h3>DATOS DE ENVIO:</h3>
+
+                    <br>
+
+                    <label for="pais">PAÍS</label>
+                    <select name="pais" id="pais">
+                        <option value="argentina">ARGENTINA</option>
+                        <option value="uruguay">URUGUAY</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="cod">CÓDIGO POSTAL</label>
+                    <input type="text" pattern="[0-9]{5}" required id="cod">
+
+                    <br><br>
+
+                    <input type="submit" value="Comprar" id="enviar">
+                    <input type="reset" value="Restablecer" id="reset">
+                </form>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="datosCompra">
+                <h3>DATOS DE LA COMPRA:</h3>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nihil unde deleniti deserunt inventore
+                    impedit repellat libero ex voluptatum ut vitae consequuntur, et eaque. Dolorem, quas. Vero
+                    accusantium consectetur labore odio, libero amet id ea reprehenderit maiores! Dolor, nam. Cupiditate
+                    eveniet corporis omnis atque rem. Sint corrupti est, asperiores consequuntur qui odit soluta quis
+                    cupiditate recusandae? Commodi sunt porro aspernatur error unde tempora temporibus eaque, ipsam
+                    quisquam voluptatem ea? Saepe, corporis totam laudantium et magnam quis dolorum sequi reiciendis
+                    optio velit quas quae quaerat autem unde blanditiis temporibus culpa dignissimos perferendis quia,
+                    ea minima. Accusantium debitis porro dolorum ipsum eum!</p>
+            </div>
         </div>
     </div>
 
@@ -128,9 +168,11 @@
                                 class="nav-link p-0 text-body-secondary">Cómo
                                 Comprar</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Información</a>
+                        <li class="nav-item mb-2"><a href="informacion.html"
+                                class="nav-link p-0 text-body-secondary">Información</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacto</a>
+                        <li class="nav-item mb-2"><a href="contacto.html"
+                                class="nav-link p-0 text-body-secondary">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -138,17 +180,21 @@
                 <div class="col mb-3">
                     <h5>Información</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre
+                        <li class="nav-item mb-2"><a href="informacion.html"
+                                class="nav-link p-0 text-body-secondary">Sobre
                                 Nosotros</a></li>
                         <li class="nav-item mb-2"><a href="comocomprar.html"
                                 class="nav-link p-0 text-body-secondary">Cómo
                                 Comprar</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Guía de
+                        <li class="nav-item mb-2"><a href="informacion.html"
+                                class="nav-link p-0 text-body-secondary">Guía de
                                 Talles</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Política de
+                        <li class="nav-item mb-2"><a href="informacion.html"
+                                class="nav-link p-0 text-body-secondary">Política de
                                 Devoluciones</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Preguntas
+                        <li class="nav-item mb-2"><a href="informacion.html"
+                                class="nav-link p-0 text-body-secondary">Preguntas
                                 Frecuentes</a></li>
                     </ul>
                 </div>
@@ -165,8 +211,10 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

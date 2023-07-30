@@ -234,7 +234,7 @@ main {
     height: auto;
 }
 
-.bodyProductos, .bodyComprar {
+.bodyProductos, .bodyComprar, .bodyInfo,.bodyContacto, .bodyCarrito {
     margin: 0;
     padding: 0;
     background-color: rgb(243, 199, 199);
@@ -352,4 +352,88 @@ main {
   
   .videoTutorial {
     padding: 10px;
+  }
+
+  .infoContent {
+    padding: 20px;
+  }
+  
+  .h3Nosotros {
+    padding-left: 15px;
+  }
+  
+  .nosotros p {
+    text-indent: 40px;
+  }
+  
+  .guiaTalles {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .h3Guia {
+    padding-left: 15px;
+    text-align: start;
+  }
+  
+  .guiaTexto {
+    text-indent: 40px;
+  }
+  
+  .guiaArchivo {
+    text-align: center;
+  }
+  
+  .h3Politica {
+    padding-left: 15px;
+    text-align: start;
+  }
+  
+  .politicaTexto {
+    text-indent: 40px;
+  }
+  
+  .contactoContent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+  }
+  
+  .h3Contacto {
+    padding-left: 15px;
+    text-align: start;
+  }
+  
+  .contactoForm {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 40px;
+  }
+  
+  .contactoForm form label {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 2px;
+  }
+  
+  .inputContacto {
+    width: 200px;
+  }
+  
+  .formulario {
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+  }
+  
+  .contactoContentCarrito {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
   }
