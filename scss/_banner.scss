@@ -2,7 +2,7 @@
         border: 1px solid red;
         width: 100%;
         height: auto;
-        background-color: firebrick;
+        background-color: $color;
 
         .titulo {
             display: flex;
@@ -46,7 +46,7 @@
             cursor: pointer;
 
             &:hover {
-                color: black;
+                color: $negro;
             }
         }
     }

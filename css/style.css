@@ -352,7 +352,7 @@
   }
 }
 .footer .logoFooter {
-  width: 75px;
+  width: 100px;
   height: auto;
 }
 @media (max-width: 870px) {
@@ -375,7 +375,7 @@
   padding: 15px 5px;
 }
 .info .infoContent .nosotros .h3Nosotros {
-  padding-left: 15px;
+  padding: 15px 5px;
 }
 .info .infoContent .nosotros p {
   text-indent: 40px;
@@ -385,7 +385,7 @@
   flex-flow: column nowrap;
 }
 .info .infoContent .guiaTalles .h3Guia {
-  padding-left: 15px;
+  padding: 15px 5px;
   text-align: start;
 }
 .info .infoContent .guiaTalles .guiaTexto {
@@ -395,7 +395,7 @@
   text-align: center;
 }
 .info .infoContent .politicaDevoluciones .h3Politica {
-  padding-left: 15px;
+  padding: 15px 5px;
   text-align: start;
 }
 .info .infoContent .politicaDevoluciones .politicaTexto {
@@ -474,7 +474,7 @@
   }
 }
 .contenedorPadre .footerProducto .logoFooter {
-  width: 75px;
+  width: 100px;
   height: auto;
 }
 

@@ -36,7 +36,7 @@
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: $negro;
                 }
             }
         }
@@ -55,7 +55,7 @@
         .card {
             div {
                 a {
-                    background-color: crimson;
+                    background-color: $botonCard;
                 }
 
                 p {
@@ -93,7 +93,7 @@
         }
 
         .logoFooter {
-            width: 75px;
+            width: $logoAncho;
             height: auto;
         }
     }

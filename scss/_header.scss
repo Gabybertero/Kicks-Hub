@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: $negro;
     padding: 5px;
 
     nav {
@@ -13,10 +13,10 @@
     .navbar {
         width: 100%;
         height: auto;
-        background-color: black;
+        background-color: $negro;
 
         .contenedor {
-            background-color: black;
+            background-color: $negro;
             width: 100%;
             height: auto;
             list-style: none;
@@ -33,7 +33,7 @@
 
             .logo {
                 img {
-                    width: 100px;
+                    width: $logoAncho;
                     height: auto;
                     transition: all 0.3s;
 
@@ -115,7 +115,7 @@
                             ul {
                                 li {
                                     .itemInfo {
-                                        color: black;
+                                        color: $negro;
                                         transition: all 0.3s;
 
                                         &:hover {
