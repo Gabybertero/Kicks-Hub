@@ -6,31 +6,23 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-.content {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(243, 199, 199);
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-.content .header {
+.header {
   width: 100%;
   height: auto;
   background-color: black;
   padding: 5px;
 }
-.content .header nav {
+.header nav {
   margin: 0;
   padding: 0;
   z-index: 1;
 }
-.content .header .navbar {
+.header .navbar {
   width: 100%;
   height: auto;
   background-color: black;
 }
-.content .header .navbar .contenedor {
+.header .navbar .contenedor {
   background-color: black;
   width: 100%;
   height: auto;
@@ -42,54 +34,54 @@
   text-align: center;
 }
 @media (max-width: 1000px) {
-  .content .header .navbar .contenedor {
+  .header .navbar .contenedor {
     flex-direction: column;
     align-items: center;
   }
 }
-.content .header .navbar .contenedor .logo img {
+.header .navbar .contenedor .logo img {
   width: 100px;
   height: auto;
   transition: all 0.3s;
 }
-.content .header .navbar .contenedor .logo img:hover {
+.header .navbar .contenedor .logo img:hover {
   transform: scale(1.1);
 }
-.content .header .navbar .contenedor .divUl {
+.header .navbar .contenedor .divUl {
   flex-flow: row wrap;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
 }
-.content .header .navbar .contenedor .divUl .divNavbar {
+.header .navbar .contenedor .divUl .divNavbar {
   display: flex;
   width: auto;
   height: auto;
   flex-flow: row nowrap;
 }
 @media (max-width: 1000px) {
-  .content .header .navbar .contenedor .divUl .divNavbar {
+  .header .navbar .contenedor .divUl .divNavbar {
     flex-direction: column;
     align-items: center;
   }
 }
-.content .header .navbar .contenedor .divUl .divNavbar .busqueda {
+.header .navbar .contenedor .divUl .divNavbar .busqueda {
   display: flex;
   width: 100%;
   height: auto;
   justify-content: right;
   align-items: center;
 }
-.content .header .navbar .contenedor .divUl .divNavbar .busqueda .carrito {
+.header .navbar .contenedor .divUl .divNavbar .busqueda .carrito {
   height: auto;
   width: 40px;
   padding: 0 10px;
 }
-.content .header .navbar .contenedor .divUl .divLista {
+.header .navbar .contenedor .divUl .divLista {
   width: auto;
   height: auto;
 }
-.content .header .navbar .contenedor .divUl .divLista .lista {
+.header .navbar .contenedor .divUl .divLista .lista {
   display: flex;
   flex-flow: row nowrap;
   text-align: center;
@@ -99,38 +91,39 @@
   height: auto;
 }
 @media (max-width: 1000px) {
-  .content .header .navbar .contenedor .divUl .divLista .lista {
+  .header .navbar .contenedor .divUl .divLista .lista {
     flex-direction: column;
     align-items: center;
   }
 }
-.content .header .navbar .contenedor .divUl .divLista .lista .navTitulo {
+.header .navbar .contenedor .divUl .divLista .lista .navTitulo {
   color: beige;
 }
-.content .header .navbar .contenedor .divUl .divLista .lista .navLi {
+.header .navbar .contenedor .divUl .divLista .lista .navLi {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
   transition: all 0.3s;
 }
-.content .header .navbar .contenedor .divUl .divLista .lista .navLi:hover {
+.header .navbar .contenedor .divUl .divLista .lista .navLi:hover {
   transform: scale(1.1);
 }
-.content .header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo {
+.header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo {
   color: black;
   transition: all 0.3s;
 }
-.content .header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo:hover {
+.header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo:hover {
   transform: scale(1.1);
 }
-.content .cajaTitulo {
+
+.cajaTitulo {
   border: 1px solid red;
   width: 100%;
   height: auto;
   background-color: firebrick;
 }
-.content .cajaTitulo .titulo {
+.cajaTitulo .titulo {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -154,7 +147,7 @@
     letter-spacing: 0;
   }
 }
-.content .cajaTitulo .slogan {
+.cajaTitulo .slogan {
   display: flex;
   color: beige;
   text-align: center;
@@ -167,8 +160,17 @@
   transition: color 0.3s ease;
   cursor: pointer;
 }
-.content .cajaTitulo .slogan:hover {
+.cajaTitulo .slogan:hover {
   color: black;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 199, 199);
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 .content main {
   display: flex;
@@ -187,16 +189,17 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-.content .carousel {
+
+.carousel {
   width: 50%;
   height: auto;
   margin: 10px auto;
 }
-.content .carousel .carousel-item {
+.carousel .carousel-item {
   width: 100%;
   height: auto;
 }
-.content .carousel .carousel-item .producto {
+.carousel .carousel-item .producto {
   margin: 0 auto;
   width: 70%;
   max-width: none;
@@ -204,52 +207,202 @@
   display: inline;
 }
 @media all and (max-width: 450px) {
-  .content .carousel .carousel-item .producto .producto {
+  .carousel .carousel-item .producto .producto {
     width: 100%;
   }
 }
-.content .carousel .carousel-item .carouselP {
+.carousel .carousel-item .carouselP {
   color: black;
 }
-.content .marcas {
+
+.marcas {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
   margin-top: 20px;
 }
-.content .marcas h3 {
+.marcas h3 {
   margin-top: 15px;
 }
-.content .marcas a img {
+.marcas a img {
   width: 150px;
   height: 100%;
   padding: 30px;
   cursor: pointer;
 }
+
+.comoComprar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  align-items: center;
+  padding: 20px;
+}
+.comoComprar h2 {
+  justify-self: start;
+  padding-left: 50px;
+}
+.comoComprar .comoComprarContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.comoComprar .comoComprarContent p {
+  text-align: start;
+  text-indent: 20px;
+}
+.comoComprar .comoComprarContent .imagenTutorial {
+  height: 500px;
+  width: 500px;
+}
+@media (max-width: 600px) {
+  .comoComprar .comoComprarContent .imagenTutorial {
+    width: auto;
+    height: auto;
+  }
+}
+.comoComprar .comoComprarContent .videoTutorial {
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .comoComprar .comoComprarContent .videoTutorial {
+    width: auto;
+    height: auto;
+  }
+}
+
+.contactoContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.contactoContent .h3ContactoDiv .h3Contacto {
+  padding-left: 15px;
+  text-align: start;
+}
+.contactoContent .contactoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 40px;
+}
+.contactoContent .contactoForm .formulario {
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+}
+.contactoContent .contactoForm .formulario label {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 2px;
+}
+.contactoContent .contactoForm .formulario .inputContacto {
+  width: 200px;
+}
+
+.contactoContentCarrito {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
 @media (max-width: 575px) {
-  .content .footer {
+  .contactoContentCarrito {
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+.contactoContentCarrito .column {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+@media (max-width: 575px) {
+  .contactoContentCarrito .column {
+    padding: 10px;
+    text-align: center;
+  }
+}
+.contactoContentCarrito .column .contactoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 40px;
+}
+.contactoContentCarrito .column .contactoForm .formulario {
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+}
+.contactoContentCarrito .column .contactoForm .formulario label {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 2px;
+}
+.contactoContentCarrito .column .contactoForm .formulario .inputContacto {
+  width: 200px;
+}
+
+@media (max-width: 575px) {
+  .footer {
     justify-content: center;
     text-align: center;
   }
 }
-.content .footer .logoFooter {
+.footer .logoFooter {
   width: 75px;
   height: auto;
 }
 @media (max-width: 870px) {
-  .content .footer {
+  .footer {
     width: 100%;
     height: auto;
     justify-content: center;
     text-align: center;
     font-size: 12px;
   }
-  .content .footer h5 {
+  .footer h5 {
     font-size: 15px;
   }
 }
-.content .contenedorPadre {
+
+.info .infoContent {
+  padding: 20px;
+}
+.info .infoContent .infoTitulo {
+  padding: 15px 5px;
+}
+.info .infoContent .nosotros .h3Nosotros {
+  padding-left: 15px;
+}
+.info .infoContent .nosotros p {
+  text-indent: 40px;
+}
+.info .infoContent .guiaTalles {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.info .infoContent .guiaTalles .h3Guia {
+  padding-left: 15px;
+  text-align: start;
+}
+.info .infoContent .guiaTalles .guiaTexto {
+  text-indent: 40px;
+}
+.info .infoContent .guiaTalles .guiaArchivo {
+  text-align: center;
+}
+.info .infoContent .politicaDevoluciones .h3Politica {
+  padding-left: 15px;
+  text-align: start;
+}
+.info .infoContent .politicaDevoluciones .politicaTexto {
+  text-indent: 40px;
+}
+
+.contenedorPadre {
   display: grid;
   grid-template-areas: "nav card card card card info" "nav card card card card info" "nav card card card card info" "nav card card card card info" "nav footer footer footer footer info";
   grid-template-columns: repeat(6, 2fr);
@@ -261,47 +414,47 @@
   column-gap: 10px;
   padding-top: 10px;
 }
-.content .contenedorPadre .navProductos {
+.contenedorPadre .navProductos {
   grid-area: nav;
 }
-.content .contenedorPadre .navProductos .tituloProducto {
+.contenedorPadre .navProductos .tituloProducto {
   font-weight: bold;
   padding-left: 15px;
 }
-.content .contenedorPadre .navProductos .categorias {
+.contenedorPadre .navProductos .categorias {
   text-indent: 10px;
   padding-left: 15px;
 }
-.content .contenedorPadre .navProductos .ulNavProductos {
+.contenedorPadre .navProductos .ulNavProductos {
   list-style: none;
 }
-.content .contenedorPadre .navProductos .ulNavProductos li {
+.contenedorPadre .navProductos .ulNavProductos li {
   text-indent: 20px;
 }
-.content .contenedorPadre .navProductos .ulNavProductos li a {
+.contenedorPadre .navProductos .ulNavProductos li a {
   text-decoration: none;
   color: black;
 }
-.content .contenedorPadre .productos {
+.contenedorPadre .productos {
   grid-area: card;
 }
-.content .contenedorPadre .productos .row div {
+.contenedorPadre .productos .row div {
   padding: 0px 10px 15px 10px;
 }
-.content .contenedorPadre .productos .card div a {
+.contenedorPadre .productos .card div a {
   background-color: crimson;
 }
-.content .contenedorPadre .productos .card div p {
+.contenedorPadre .productos .card div p {
   font-size: 15px;
 }
-.content .contenedorPadre .productos .card div h3 {
+.contenedorPadre .productos .card div h3 {
   display: flex;
   font-size: 20px;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.content .contenedorPadre .footerProducto {
+.contenedorPadre .footerProducto {
   grid-area: footer;
   margin: 0;
   padding: 0;
@@ -309,163 +462,20 @@
   height: auto;
 }
 @media (max-width: 950px) {
-  .content .contenedorPadre .footerProducto {
+  .contenedorPadre .footerProducto {
     width: 100%;
     height: auto;
     justify-content: center;
     text-align: center;
     font-size: 12px;
   }
-  .content .contenedorPadre .footerProducto h5 {
+  .contenedorPadre .footerProducto h5 {
     font-size: 15px;
   }
 }
-.content .contenedorPadre .footerProducto .logoFooter {
+.contenedorPadre .footerProducto .logoFooter {
   width: 75px;
   height: auto;
-}
-.content .comoComprar {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-self: center;
-  align-items: center;
-  padding: 20px;
-}
-.content .comoComprar h2 {
-  justify-self: start;
-  padding-left: 50px;
-}
-.content .comoComprar .comoComprarContent {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.content .comoComprar .comoComprarContent p {
-  text-align: start;
-  text-indent: 20px;
-}
-.content .comoComprar .comoComprarContent .imagenTutorial {
-  height: 500px;
-  width: 500px;
-}
-@media (max-width: 600px) {
-  .content .comoComprar .comoComprarContent .imagenTutorial {
-    width: auto;
-    height: auto;
-  }
-}
-.content .comoComprar .comoComprarContent .videoTutorial {
-  padding: 10px;
-}
-@media (max-width: 600px) {
-  .content .comoComprar .comoComprarContent .videoTutorial {
-    width: auto;
-    height: auto;
-  }
-}
-.content .info .infoContent {
-  padding: 20px;
-}
-.content .info .infoContent .infoTitulo {
-  padding: 15px 5px;
-}
-.content .info .infoContent .nosotros .h3Nosotros {
-  padding-left: 15px;
-}
-.content .info .infoContent .nosotros p {
-  text-indent: 40px;
-}
-.content .info .infoContent .guiaTalles {
-  display: flex;
-  flex-flow: column nowrap;
-}
-.content .info .infoContent .guiaTalles .h3Guia {
-  padding-left: 15px;
-  text-align: start;
-}
-.content .info .infoContent .guiaTalles .guiaTexto {
-  text-indent: 40px;
-}
-.content .info .infoContent .guiaTalles .guiaArchivo {
-  text-align: center;
-}
-.content .info .infoContent .politicaDevoluciones .h3Politica {
-  padding-left: 15px;
-  text-align: start;
-}
-.content .info .infoContent .politicaDevoluciones .politicaTexto {
-  text-indent: 40px;
-}
-.content .contactoContent {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-.content .contactoContent .h3ContactoDiv .h3Contacto {
-  padding-left: 15px;
-  text-align: start;
-}
-.content .contactoContent .contactoForm {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 40px;
-}
-.content .contactoContent .contactoForm .formulario {
-  align-items: center;
-  text-align: start;
-  justify-content: space-between;
-}
-.content .contactoContent .contactoForm .formulario label {
-  border: 1px solid black;
-  border-radius: 0;
-  padding: 2px;
-}
-.content .contactoContent .contactoForm .formulario .inputContacto {
-  width: 200px;
-}
-.content .contactoContentCarrito {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-@media (max-width: 575px) {
-  .content .contactoContentCarrito {
-    flex-flow: column nowrap;
-    width: 100%;
-    height: auto;
-  }
-}
-.content .contactoContentCarrito .column {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1;
-}
-@media (max-width: 575px) {
-  .content .contactoContentCarrito .column {
-    padding: 10px;
-    text-align: center;
-  }
-}
-.content .contactoContentCarrito .column .contactoForm {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 40px;
-}
-.content .contactoContentCarrito .column .contactoForm .formulario {
-  align-items: center;
-  text-align: start;
-  justify-content: space-between;
-}
-.content .contactoContentCarrito .column .contactoForm .formulario label {
-  border: 1px solid black;
-  border-radius: 0;
-  padding: 2px;
-}
-.content .contactoContentCarrito .column .contactoForm .formulario .inputContacto {
-  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
